@@ -31,23 +31,24 @@
   <h1 class="visually-hidden">Поиск гостиниц</h1>
   <h2>Поиск гостиницы в Седоне</h2>
     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="appointment-item">Дата заезда:
-      <input type="text" name="date" value="24 апреля 2017" placeholder="">
+      <p class="appointment-item">
+      <label for="appointment-date-of-arrival">Дата заезда:</label>
+      <input id="appointment-date-of-arrival" type="text" name="date-of-arrival" value="24 апреля 2017">
     </p>
-    <p class="appointment-item">Дата выезда:
-      <input type="text" name="date" value="4 июля 2017" placeholder="">
+    <p class="appointment-item">
+      <label for="appointment-date-of-departure">Дата выезда:</label>
+      <input id="appointment-date-of-departure" type="text" name="date-of-departure" value="4 июля 2017">
     </p>
     <p class="number">Взрослые:
-      <button class="button" type="">-</button>
-
-      <button class="button" type="">+</button>
+      <button class="button" value="minus">-</button>
+      <button class="button" value="plus">+</button>
     </p>
     <p class="number">Дети:
-        <button class="button-more" type="">-</button>
-  
-        <button class="button-less" type="">+</button>
-        <p><a class="button" href="#">Найти</a></p>
+        <button class="button" value="">-</button>
+        <button class="button" value="">+</button>
       </p>
+        <p><a class="button" href="#">Найти</a></p>
+
     </form>
   </section>
       <footer class="main-footer">
