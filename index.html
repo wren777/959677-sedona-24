@@ -33,31 +33,36 @@
     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="appointment-item">
       <label for="appointment-date-of-arrival">Дата заезда:</label>
-      <input id="appointment-date-of-arrival" type="text" name="date-of-arrival" value="24 апреля 2017">
+      <input id="appointment-date-of-arrival" type="text" value="24 апреля 2017" >
+      <button class="button" type="button">Календарь</button>
     </p>
     <p class="appointment-item">
       <label for="appointment-date-of-departure">Дата выезда:</label>
-      <input id="appointment-date-of-departure" type="text" name="date-of-departure" value="4 июля 2017">
+      <input id="appointment-date-of-departure" type="text" value="4 июля 2017">
+      <button class="button" type="button">Календарь</button>
     </p>
-    <p class="number">Взрослые:
-      <button class="button" value="minus">-</button>
-      <button class="button" value="plus">+</button>
+    <p class="quantity">Взрослые:
+      <button class="button" type="button">-</button>
+      <input type="text" value="2">
+      <button class="button" type="button">+</button>
     </p>
-    <p class="number">Дети:
-        <button class="button" value="">-</button>
-        <button class="button" value="">+</button>
+    <p class="quantity">Дети:
+        <button class="button" type="button">-</button>
+        <input type="text" value="0">
+        <button class="button" type="button">+</button>
       </p>
-        <p><a class="button" href="#">Найти</a></p>
-
+        <p class="search">
+        <button class="button" type="button">Найти</button>
+      </p>
     </form>
   </section>
       <footer class="main-footer">
         <p class="tag">#visitsedona</p>
-         <div class='footer-social'> 
+         <div class="footer-social"> 
           <ul>
-            <li><a href="#">Твитер</a></li> 
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Ютуб</a></li>
+            <li><a href="#" aria-label="Седона в твитере">Твитер</a></li> 
+            <li><a href="#" aria-label="Седона на фейсбуке">Фейсбук</a></li>
+            <li><a href="#" aria-label="Седона на Ютубе">Ютуб</a></li>
           </ul>
         </div>
         <p class="footer-copyright">Website by</p>
