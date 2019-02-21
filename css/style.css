@@ -73,7 +73,7 @@ a {
   justify-content: space-evenly;
   
   width: 100%;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   list-style: none;
 }
@@ -146,9 +146,10 @@ padding-top: 60px;
 
 .main-booking {
   text-align: center;
-}
+  margin-top: 60px;
+  margin-bottom: 35px;
 
-.main-booking {
+
   font-size: 30px;
   line-height: 36px;
 }
@@ -159,9 +160,13 @@ padding-top: 60px;
   color: #333333
 }
 
+.main-footer {
+padding: 40px;
+}
+
 .main-footer .container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   
   
@@ -179,10 +184,24 @@ padding-top: 60px;
 
 .footer-copyright {
   width: 195px;
-
 }
+
+.catalog {
+  width: 1200px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
   list-style: none;
+}
+
+.catalog-item {
+width: 1055px;
+
 }
 
 .catalog-item a {
