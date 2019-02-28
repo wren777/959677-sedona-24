@@ -11,6 +11,12 @@ body {
   background-position: center;
 }
 
+.visually-hidden {
+
+  visibility: hidden;
+  position: absolute;
+} 
+
 .active {
   color: #766357;
 }
@@ -64,7 +70,11 @@ a {
   background-color: #ffffff;
 }
 .main-navigation {
+  display: flex;
+  align-items: center;
   position: relative; 
+  justify-content: space-between;
+  height: 56px;
   
   font-size: 14px;
   line-height: 26px;
@@ -72,20 +82,38 @@ a {
   background-color: #ffffff;
 }
 
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
 .site-navigation {
   display: flex; 
+  align-items: center;
+  flex-wrap: wrap; 
   margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
   min-height: 56px;
+  box-sizing: border-box;
   
-  width: 100%;
+  width: auto;
   margin-top: 0;
-  padding: 0;
   list-style: none;
 }
 
 .site-navigation a {
+  display: block;
+
   color: #000000;
+}
+
+.main-navigation-wrapper .logo {
+  position: absolute;
+  left: 44%;
+  top: 0px;
+  z-index: 1;
 }
 
 .site-navigation a:hover {
@@ -102,8 +130,8 @@ a {
   padding-top: 75px; 
   padding-bottom: 0px;
   align-items: center;
-  width: 1200px;
-  height: 500px;
+  width: 100%;
+  height: 450px;
   background-size: cover; 
   
   background-image: url("../img/bp.jpg");
@@ -116,10 +144,12 @@ a {
   content: "";  /* у псевдокласса всегда должно быть это свойство, если контента (текста) нет, то пустые ковычки */
   position: absolute;  /* псевдокласс всегда absolute */
   background-image: url("../img/polygon.png");
- width: 1200px;
+
  height: 60px; 
  bottom: -2px;
  left: -1px;
+ right: 0px;
+ background-size: cover;
 }
 
 
@@ -168,8 +198,10 @@ a {
 }
 
 .tag {
+  font-size: 21px;
   width: 135px;
   margin: 0px; 
+  margin-left: 95px;
 }
 
 .footer-social {
@@ -178,21 +210,50 @@ a {
 }
 
 .footer-social ul {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
+  width: 150px;
   justify-content: space-between;
-  
   list-style: none;
 }
 
-.social-buttom {
+.social-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 46px;
+  height: 48px;
+  
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 .footer-copyright {
-  width: 195px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 101px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.button {
+  display: flex;
+  margin-left: 8px;
+}
+
+.button:hover {
+  color: #81b3d2;
 }
 
 .catalog {
