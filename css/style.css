@@ -203,6 +203,7 @@ a {
   border: none;
   padding-top: 35px;
   padding-bottom: 33px;
+  outline: none;
 }
 .open-search:hover {
   color: #ffffff;
@@ -219,6 +220,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 29px;
 }
 
 .appointment-form {
@@ -251,7 +253,7 @@ a {
   border: none; 
   padding-left: 12px;
   margin-left: 10px; 
- 
+  outline: none;
 }
 
 .calendar-button {
@@ -264,6 +266,16 @@ a {
   outline: none;
   fill: #a9a9a9;
 }
+.calendar-button:hover path {
+  fill: #000000;
+  background-color: #f2f2f2; 
+}
+
+.calendar-button:active path {
+  fill: rgba(129, 179, 210, 0.8);
+  background-color: #f2f2f2;
+}
+
 
 .calendar-button-dep {
   position: absolute;
@@ -271,9 +283,20 @@ a {
   left: 90%;
     top: 7px;
   z-index: 1;
+  outline: none;
   
   background-color: #f2f2f2;
   fill: #a9a9a9;
+}
+
+.calendar-button-dep:hover  path {
+  fill: #000000;
+  background-color: #f2f2f2; 
+}
+
+.calendar-button-dep:active path {
+  fill: rgba(129, 179, 210, 0.8);
+  background-color: #f2f2f2;
 }
 
 .quantity input {
@@ -289,7 +312,7 @@ a {
   background-color: #f2f2f2; 
   border: none;
   margin-left: 38px;
-
+  outline: none;
 }
 
 
@@ -311,7 +334,8 @@ display: flex;
   color: #ffffff;
   padding-top: 17px;
   padding-bottom: 22px;
- 
+  margin-top: 54px;
+  outline: none;
 }
 
 .quantity {
@@ -328,7 +352,7 @@ display: flex;
   border: none;
   width: 38px;
   height: 38px;
-
+  outline: none;
   font-size: 0;
   font-weight: bold;
   text-align: center;
@@ -343,6 +367,7 @@ display: flex;
   background-color: #f2f2f2; 
   position: absolute;
   border: none;
+  outline: none;
   width: 38px;
   height: 38px;
   left: 111px;
@@ -358,7 +383,7 @@ display: flex;
   border: none;
   width: 38px;
   height: 38px;
-
+  outline: none;
   left: 186px;
 
 }
@@ -370,7 +395,19 @@ display: flex;
 
 .quantity-second .button-plus {
   left: 151px;
+  outline: none;
 }
+
+.quantity .button-minus:hover {
+  fill: #000000;
+  background-color: #f2f2f2; 
+}
+
+.quantity .button-minus:active path {
+  fill: rgba(129, 179, 210, 0.8);
+  background-color: #f2f2f2;
+}
+
 
 
 
@@ -459,7 +496,7 @@ fill: rgba(255, 255, 255, 0.3);
   fill: #bdbbbc;
 }
 
-.button
+
 
 .catalog {
   width: 700px;
@@ -510,4 +547,14 @@ fill: rgba(255, 255, 255, 0.3);
   color: #333333
 }
 
+.catalog-item-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
 
+}
+
+.catalog-item-col p {
+  display: flex;
+  justify-content: flex-start;
+}
