@@ -259,27 +259,7 @@ a {
 	padding-bottom: 72px;
 	padding-top: 162px;
 }
-.icons {
-	position: absolute;
-	border: -2;
-	left: 162px;
-	top: 60px;
-	z-index: 1;
-}
-.icons-food {
-	position: absolute;
-	border: -2;
-	left: 563px;
-	top: 61px;
-	z-index: 1;
-}
-.icons-sou {
-	position: absolute;
-	border: -2;
-	right: 168px;
-	top: 57px;
-	z-index: 1;
-}
+
 .reason {
 	display: flex;
 	align-items: center;
@@ -348,8 +328,6 @@ a {
 	border: none;
 	padding-top: 3px;
 	padding-right: 4px;
-	padding-left: -7px;
-	padding-bottom: -1px;
 	margin-top: 33px;
 	margin-bottom: 35px;
 	outline: none;
@@ -659,12 +637,16 @@ a {
 	padding: 0;
 	margin: 0;
 }
+
+
 .column {
 	display: flex;
 }
-.column-right {
+
+.column .column-right {
 	margin-left: 123px;
 }
+
 .filter legend {
 	font-size: 16px;
 	font-weight: bold;
