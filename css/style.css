@@ -120,8 +120,8 @@ a {
 .site-navigation a {
 	color: #000000;
 }
-.site-navigation .logo-side {
-	min-width: 77px;
+.site-navigation .central {
+	min-width: 96px;
 }
 .main-navigation-wrapper .logo {
 	position: absolute;
@@ -167,8 +167,10 @@ a {
 	line-height: 26px;
 }
 .main-features-text {
+	width: 440px;
 	margin: 60px;
-	margin-bottom: 27px;
+	margin-bottom: 26px;
+	margin-left: 381px;
 }
 .main-features-title {
 	margin-bottom: 50px;
@@ -196,10 +198,41 @@ a {
 }
 .city {
 	display: flex;
-	padding-top: 46px;
-	padding-right: 60px;
+	align-items: center;
+	list-style: none;
+	background-color: #81b3d2;
+	height: 256px;
+	width: 400px;
+}
+.real-city {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 280px;
+	height: 146px;
+	padding-bottom: 59px;
+	text-align: center;
 	padding-left: 60px;
-	padding-bottom: 64px;
+	padding-right: 60px;
+}
+.city h2 {
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-top: 21px;
+	width: 121px;
+}
+.city p {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 3px;
+	margin-bottom: 18px;
 }
 .list-services {
 	list-style: none;
@@ -243,6 +276,7 @@ a {
 	line-height: 1.5;
 	margin-top: 3px;
 	color: #333333;
+	width: 285px;
 }
 .col svg {
 	height: 76px;
@@ -256,33 +290,75 @@ a {
 	padding-bottom: 72px;
 	padding-top: 162px;
 }
-.reason {
+.features-more {
 	display: flex;
+	width: 100%;
 	align-items: center;
-}
-.reason-two {
-	display: flex;
-	padding: 49px 49px 65px 48px;
+	justify-content: space-between;
+	background-color: #eeeeee;
 }
 .more-reason {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	background-color: #eeeeee;
-	min-height: 225px;
-	margin-top: 0px;
-	padding-left: 95px;
-	padding-bottom: 30px;
-	padding-right: 77px;
+	max-height: 225px;
+	flex-direction: column;
+	text-align: center;
+	padding-left: 66px;
+	padding-right: 69px;
+	padding-top: 27px;
+	padding-bottom: 50px;
 }
-.more-reason img {
-	padding-top: 10px;
+.more-reason h2 {
+	font-size: 21px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 6px;
+	margin-top: 18px;
+	width: 117px;
+}
+.more-reason p {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #333333;
+	margin-bottom: 8px;
+	width: 265px;
+}
+.more-reason-tourist {
+	max-height: 225px;
+	text-align: center;
+	padding-left: 72px;
+	padding-right: 77px;
+	padding-top: 26px;
+	padding-bottom: 41px;
+}
+.more-reason-tourist p {
+	width: 255px;
+	margin-bottom: 8px;
+	padding-top: 3px;
+}
+.more-reason-tourist h2 {
+	margin-top: 10px;
+	width: 117px;
+	padding-right: -41px;
+	margin-left: 69px;
 }
 .list-reason {
-	list-style: none;
-	padding-left: 0px;
-	margin-top: 13px;
-	margin-bottom: 0px;
+	display: flex;
+	margin-top: -256px;
+	margin-left: 800px;
+	width: 400px;
+	height: 256px;
+}
+.features-reason {
+	display: flex;
+	flex-direction: column;
 }
 .item-reason {
 	display: flex;
@@ -290,10 +366,31 @@ a {
 	align-items: center;
 	list-style: none;
 	background-color: #81b3d2;
-	min-height: 256px;
+	min-height: 142px;
 	width: 400px;
-	margin-top: -269px;
-	margin-left: 800px;
+}
+.item-reason h2 {
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 44px;
+}
+.item-reason p {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 3px;
+	margin-bottom: 18px;
+	width: 303px;
+	padding-left: 13px;
+	padding-right: 10px;
+	margin-right: 0px;
 }
 .main-booking-text {
 	margin-top: 50px;
@@ -432,7 +529,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 17px;
+	padding-top: 31px;
 }
 .find-button {
 	font-family: "PT Sans", Arial, sans-serif;
@@ -447,7 +544,7 @@ a {
 	color: #ffffff;
 	padding-top: 17px;
 	padding-bottom: 22px;
-	margin-top: 40px;
+	margin-top: 41px;
 	outline: none;
 }
 .quantity {
@@ -529,7 +626,7 @@ a {
 	background-color: #5496bd;
 }
 .map {
-	margin-top: -397px;
+	margin-top: -396px;
 }
 .map img {
 	max-height: 472px;
@@ -539,8 +636,11 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: -17px;
+	margin-top: -26px;
 	margin-left: -2px;
+}
+.page {
+	margin-top: -16px;
 }
 .tag {
 	font-size: 21px;
@@ -842,6 +942,7 @@ a {
 	line-height: 18px;
 	letter-spacing: normal;
 	padding-right: 40px;
+	padding-top: 4px;
 }
 .result {
 	padding-right: 49px;
@@ -852,6 +953,7 @@ a {
 	line-height: 18px;
 	color: #81b3d2;
 	padding-right: 33px;
+	margin-top: 16px;
 }
 .button-type {
 	width: 49px;
@@ -865,6 +967,7 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 	margin-right: 33px;
 	padding-right: 3px;
+	margin-top: 3px;
 }
 .button-type:hover {
 	color: #81b3d2;
@@ -873,7 +976,7 @@ a {
 	color: #000000;
 }
 .button-rating {
-	width: 75px;
+	width: 78px;
 	height: 18px;
 	opacity: 1.3;
 	font-size: 12px;
@@ -882,6 +985,7 @@ a {
 	line-height: 18px;
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #81b3d2;
+	margin-top: 3px;
 }
 .button-rating:hover {
 	color: #81b3d2;
